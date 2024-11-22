@@ -1,0 +1,200 @@
+{
+    "2024-11-19 20": {
+        "version": "1.1.12",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复多语言下出现路径不正确导致google抓取404的问题"
+        ],
+        "modify": [
+            "lib/components/locale-dropdown.tsx"
+        ]
+    },
+    "2024-11-19 17": {
+        "version": "1.1.11",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复子游戏iframe无法加载正确地址的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/IframeSection.tsx"
+        ]
+    },
+    "2024-11-19 16": {
+        "version": "1.1.10",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复游戏推荐组件不显示的问题",
+            "支持设置游戏推荐位置"
+        ],
+        "modify": [
+            "app/[locale]/(public)/layout.tsx",
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx", 
+            "app/[locale]/(public)/views/Recommendation.tsx",
+            "lib/types/site.ts"
+        ]
+    },
+    "2024-11-19": {
+        "version": "1.1.9",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复游戏推荐卡片组件",
+            "更新FAQ和Features组件",
+            "更新站点类型定义"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/FAQs.tsx",
+            "app/[locale]/(public)/views/Features.tsx", 
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx",
+            "lib/types/site.ts"
+        ],
+        "add": [
+            "lib/components/games-template/config/user-input-text.md"
+        ]
+    },
+    "2024-11-18 17": {
+        "version": "1.1.8", 
+        "messagesKeyModify": false,
+        "changeLog": [
+            "添加缺失的模板文件"
+        ],
+        "add": [
+            "lib/components/games-template/config/config.json",
+            "lib/components/games-template/config/faqs/en.json",
+            "messages/game_page_template.json",
+            "lib/components/games-template/config/user-input-text.md"
+        ]
+    },
+    "2024-11-18 09": {
+        "version": "1.1.7", 
+        "messagesKeyModify": false,
+        "changeLog": [
+            "解决编译报错"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/views/Comments.tsx",
+            "lib/components/games-template/page.tsx",
+            "lib/components/games-template/config/config.json",
+            "lib/components/games-template/config/faqs/en.json"
+        ]
+    },
+    "2024-11-18": {
+        "version": "1.1.6", 
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复多个页面组件的问题国际化不正确的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/views/Comments.tsx",
+            "app/[locale]/(public)/views/DownloadGame.tsx",
+            "app/[locale]/(public)/views/FAQs.tsx", 
+            "app/[locale]/(public)/views/Features.tsx",
+            "app/[locale]/(public)/views/IframeActions.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/Recommendation.tsx",
+            "app/[locale]/(public)/views/RelatedVideo.tsx"
+        ]
+    },
+    "2024-11-16": {
+        "version": "1.1.5",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "增加新建子游戏页面模板功能",
+            "增加右侧游戏推荐功能",
+            "优化游戏页面布局"
+        ],
+        "add": [
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx",
+            "lib/config/game-page-messages.json",
+            "lib/utils/resource.ts",
+            "messages/en/games/demo.json",
+            "resources/right-games/en.json"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/views/DownloadGame.tsx", 
+            "app/[locale]/(public)/views/FAQs.tsx",
+            "app/[locale]/(public)/views/Features.tsx",
+            "app/[locale]/(public)/views/IframeActions.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "app/[locale]/(public)/views/Recommendation.tsx",
+            "app/[locale]/(public)/views/RelatedVideo.tsx",
+            "i18n.ts",
+            "lib/config/site.ts",
+            "lib/types/site.ts",
+            "resources/recommendation/en.json"
+        ]
+    },
+    "2024-11-12":{
+        "version":"1.1.4",
+        "messagesKeyModify":false,
+        "changeLog":[
+            "修复plausible统计不正确的问题",
+            "修复MP4视频无法播放，不显示标题的问题"
+        ],
+        "modify":[
+            "app/[locale]/(public)/layout.tsx",
+            "app/[locale]/(public)/views/RelatedVideo.tsx"
+        ]
+    },
+    "2024-11-11 20:00":{
+        "version":"1.1.3",
+        "messagesKeyModify":false,
+        "changeLog":[
+            "更新sitemap.xml文件,修复地址不正确的问题"
+        ],
+        "modify":[
+            "app/sitemap.xml",
+            "lib/config/site.json"
+        ]
+    },
+    "2024-11-11 19:00":{
+        "version":"1.1.2",
+        "messagesKeyModify":false,
+        "changeLog":[
+            "修改site.ts 默认类型，防止老网站配置不正确导致编译报错"
+        ],
+        "modify":[
+            "lib/types/site.ts"
+        ]
+    },
+    "2024-11-11":{
+        "version":"1.1.1",
+        "messagesKeyModify":true,
+        "changeLog":[
+            "增加直接跳转到其他可在线玩游戏的网站地址，用于某些游戏无法嵌入的情况。",
+            "针对下载游戏的网站，增加了多个平台下载按钮，以及可以设置下载背景图片或视频。",
+            "更改site.ts结构，增加模板更新机制",
+            "解决多语言切换问题，切换到中文后无法切换到英文",
+            "优化移动端适配",
+            "增加clarity统计",
+            "增加google ads.txt文件"
+
+        ],
+        "delete":[
+            "app/[locale]/(public)/views/FallbackView.tsx"
+        ],
+        "add":[
+            "app/[locale]/(public)/views/DownloadGame.tsx",
+            "lib/config/default.json",
+            "public/ads.txt"
+        ],
+        "modify":[
+            "lib/types/site.ts",
+            "next.config.ts",
+            "README.md",
+            "lib/components/footer.tsx",
+            "tailwind.config.ts",
+            "app/[locale]/(public)/page.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx",
+            "lib/components/locale-dropdown.tsx",
+            "lib/components/navbar.tsx",
+            "app/[locale]/(public)/layout.tsx"
+        ],
+        "breakingChange":[
+            "lib/config/site.json",
+            "lib/config/site.ts"
+        ]
+    }
+}
